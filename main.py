@@ -2,7 +2,9 @@ import pyautogui
 import pyperclip
 import time
 
-pyautogui.PAUSE = 0.5
+pyautogui.PAUSE = 0.7
+
+cont = 318
 
 while True:
     #ABRIR COREL
@@ -26,7 +28,9 @@ while True:
     pyautogui.press("2")
     pyautogui.hotkey("ctrl", "s")
     pyautogui.press("enter")
-    pyautogui.hotkey("alt", "f4")
+    time.sleep(2)
+    pyautogui.click(x=2547, y=11)
+    time.sleep(2)
 
     #EXCLUINDO COPIA DE SEGURANÇA
     
@@ -44,3 +48,5 @@ while True:
     pyautogui.click(x=230, y=212, clicks=2)
     pyautogui.hotkey("ctrl", "v")
     pyautogui.hotkey("alt", "f4")
+    cont = cont -1
+    print(cont)
