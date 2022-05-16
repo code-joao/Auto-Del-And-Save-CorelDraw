@@ -21,8 +21,8 @@ while True:
 
     #EXCLUINDO BARRA DE BAIXO
     pyautogui.press("f4")
-    pyautogui.click(x=1124, y=881, button='right')
-    pyautogui.click(x=1220, y=922)
+    pyautogui.click(x=1125, y=910, button='right')
+    pyautogui.click(x=1188, y=950)
     pyautogui.press("2")
     pyautogui.hotkey("ctrl", "s")
     pyautogui.press("enter")
