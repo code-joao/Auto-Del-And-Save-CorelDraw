@@ -4,9 +4,9 @@ import time
 
 pyautogui.PAUSE = 0.7
 
-cont = 318
+cont = 79
 
-while True:
+while cont > 0:
     #ABRIR COREL
     pyautogui.hotkey("win", "e")
     pyautogui.click(x=540, y=101)
@@ -31,6 +31,7 @@ while True:
     time.sleep(2)
     pyautogui.click(x=2547, y=11)
     time.sleep(2)
+    pyautogui.click(x=2547, y=11)
 
     #EXCLUINDO COPIA DE SEGURANÇA
     
